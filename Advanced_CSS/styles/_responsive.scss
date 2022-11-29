@@ -1,0 +1,92 @@
+
+@media screen and (max-width: 969px) {
+    .portfolio-container{
+        display: flex;
+        justify-content: center;
+        .portfolio-content{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    } 
+}
+@media screen and (max-width: 649px) {
+    .container{
+        @include flex-center(column);
+        padding-top: 200px;
+        width: 100%;
+    }
+    .testimonial{
+        width: 400px;
+        height: 425px;
+        line-height: 50px;
+    }
+    .testimonial-jomeesters{
+        width: 400px;
+    }
+    .portrait{
+        width: 150px;
+    }
+    .testimonial-footer{
+        width: 400px;
+        height: 100px;
+        line-height: 2px;
+    }
+    .text{
+        font-size: 1.1rem;
+    }
+    .title{
+        font-size: 1.3rem;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+    .url-link{
+        font-size: 1.1;
+    }
+    .portfolio-container{
+        display: flex;
+        justify-content: center;
+    .portfolio-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    }
+}
+@media screen and (max-width: 419px){
+    .container{
+        @include flex-center(column);
+        padding-top: 200px;
+        width: 100%;
+    }
+    .testimonial{
+        width: 300px;
+        height: 350px;
+        line-height: 40px;
+    }
+    .testimonial-jomeesters{
+        width: 300px;
+    }
+    .portrait{
+        width: 125px;
+    }
+    .testimonial-footer{
+        width: 300px;
+        height: 80px;
+        line-height: 2px;
+    }
+    .text{
+        font-size: 1rem;
+    }
+    .title{
+        font-size: 1.1rem;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+    .url-link{
+        font-size: 0.8rem;
+    }
+    .portfolio-container{
+        display: flex;
+        justify-content: center;
+    .portfolio-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    }  
+}

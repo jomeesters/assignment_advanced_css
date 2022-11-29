@@ -1,0 +1,66 @@
+.container{
+    @include flex-center(column);
+    padding-top: 200px;
+    width: 100%;
+}
+.testimonial{
+    @include flex-center(column);
+    @include border-white;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    background-color: $white;
+    width: $testimonial-width;
+    height: 550px;
+    padding: 5px 20px 60px 30px;
+    line-height: 60px;
+    box-shadow: $box-shadow $gray-shadow;
+}
+.text{
+    font-size: 1.9rem;
+}
+.testimonial-jomeesters{
+    @include flex-center(column);
+    @include border-purple;
+    width: $testimonial-width;
+    height: 30px;
+    padding: 5px 20px 60px 30px;
+    background-color: $purple;
+    box-shadow: $box-shadow $gray-shadow;
+}
+.portrait{
+    @include flex-center(column);
+    width: 150px;
+    border: 8px solid $white;
+    border-radius: 50%;
+    margin-top: -50px;
+}
+.testimonial-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    @include border-purple;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 5px 20px 60px 30px;
+    width: $testimonial-width;
+    height: 50px;
+    background-color: $purple;
+    box-shadow: $box-shadow $gray-shadow;
+    color: $white;
+    line-height: 2px;
+}
+.title{
+    font-size: 1.6rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.url-link{
+    color: #b7b8da;
+    &:hover{
+        color: $white;
+    }
+}
+.website{
+    font-size: 1.1rem;
+}

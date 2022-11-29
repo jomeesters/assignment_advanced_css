@@ -1,0 +1,49 @@
+.portfolio-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.port{
+    font-size: 4rem;
+    color: $white;
+}
+.portfolio-container{
+    display: flex;
+    justify-content:center;
+}
+.portfolio-content{
+    display: grid;
+    grid-gap: 20px;
+    margin-top: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    & a{
+        background-color: $white;
+        border-radius: 5px;
+        color: #000;
+        margin-top: 20px;
+        padding: 7px 15px;
+    }
+}
+.hoverimage{
+    @include flex-center(column);
+    background-color: #2a3146;
+    color: $white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+.portfolio-item{
+    border-radius: 20px;
+    overflow: hidden;
+    position:relative;
+    width: 300px;
+    &:hover .hoverimage{
+        opacity: 1;
+    }
+}
