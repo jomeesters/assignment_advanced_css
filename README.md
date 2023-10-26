@@ -100,3 +100,9 @@ content: "\f39e";
 .fa-github::before {
 content: "\f09b";
 }
+
+
+![Screen Shot 2023-10-26 at 19 52 41](https://github.com/jomeesters/assignment_advanced_css/assets/112581270/6b212b87-d769-46e2-9b45-ec5c1cd1767e)
+
+
+https://studiojomeesters.netlify.app
